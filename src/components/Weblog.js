@@ -18,12 +18,6 @@ class Weblog extends React.Component {
         );
     }
 
-    componentDidUpdate(prevProps, prevState, snapshot) {
-        {
-            console.log(this.imgRef.current)
-        }
-    }
-
     renderBlogs = () => {
         const items = [
             {
