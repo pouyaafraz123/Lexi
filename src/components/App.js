@@ -22,6 +22,8 @@ const App = () => {
                                 whileInView={{opacity: 1}}>
                                 <TopBar/>
                             </motion.div>
+                        </div>
+                    </div>
                             <Switch>
                                 <Route path={"/"} exact component={Home}/>
                                 <Route path={"/about-us"} exact component={AboutUsPage}/>
@@ -34,8 +36,7 @@ const App = () => {
                                 whileInView={{opacity: 1}}>
                                 <Footer/>
                             </motion.div>
-                        </div>
-                    </div>
+
                 </div>
             </BrowserRouter>
         </>
