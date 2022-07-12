@@ -13,7 +13,7 @@ class AboutUs extends React.Component {
       height: "100px",
       borderWidth: 0,
       borderRadius: "500px",
-      outline: "5px 5px 5px 0px solid #FF9291",
+      outline: "5px solid #FF9291",
       outlineOffset: "10px",
     };
     return (

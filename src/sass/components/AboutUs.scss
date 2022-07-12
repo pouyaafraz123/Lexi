@@ -1,29 +1,31 @@
+@import "../mixin";
+
 .AboutUs-Section h1 {
-    margin-top: 230px;
+  margin-top: 230px;
 }
 
 .AboutUs-Section-Media button {
-    z-index: 1000;
-    transform: translate(50px, -70px);
+  z-index: 1000;
+  transform: translate(50px, -70px);
 }
 
 @media only screen and (max-width: 992px) {
-    .AboutUs-Section h1 {
-        margin-top: 130px;
-        text-align: center;
-    }
+  .AboutUs-Section h1 {
+	margin-top: 130px;
+	text-align: center;
+  }
 
-    .AboutUs-Section h3,
-    p {
-        text-align: center;
-    }
+  .AboutUs-Section h3,
+  p {
+	text-align: center;
+  }
 
-    .AboutUs-Section-Media {
-        text-align: center !important;
-    }
+  .AboutUs-Section-Media {
+	text-align: center !important;
+  }
 
-    .AboutUs-Section-Media button {
-        transform: unset !important;
-        transform: translate(0, -50%) !important;
-    }
+  .AboutUs-Section-Media button {
+	transform: unset !important;
+	transform: translate(0, -50%) !important;
+  }
 }

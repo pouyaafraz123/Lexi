@@ -1,3 +1,5 @@
+@import "../mixin";
+
 .Header-Section button {
     width: 272px;
     height: 48px;
@@ -8,6 +10,7 @@
     outline: none;
     color: white;
     border: 0;
+    @include buttonHover;
 }
 
 @media only screen and (max-width: 992px) {

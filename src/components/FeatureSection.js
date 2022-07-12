@@ -1,5 +1,6 @@
 import React from "react";
 import "../sass/components/FeatureSection.scss";
+import Item from "./Item";
 class FeatureSection extends React.Component {
   render() {
     return (
@@ -34,10 +35,7 @@ class FeatureSection extends React.Component {
     ];
     return features.map((feature) => {
       return (
-        <div>
-          <img src={require(`../img/f${feature.key}.png`)} alt={"feature"}/>
-          <div>{feature.text}</div>
-        </div>
+        <Item img={`f${feature.key}`} text={feature.text} key={feature.key}/>
       );
     });
   }

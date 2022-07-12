@@ -15,7 +15,7 @@ class Header extends React.Component {
           className="col-lg-6 col-12 d-flex flex-column Header-Section-text"
           style={{ marginRight: "-50px" }}
         >
-          <div className="pt-5">
+          <div className="pt-5 pr-md-3">
             <h3 className="text-white pt-5 mt-5">
               <strong> آموزش زبان راحت تر از همیشه!!!</strong>
             </h3>
