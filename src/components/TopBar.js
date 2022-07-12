@@ -4,7 +4,7 @@ import "../sass/components/TopBar.scss";
 import {Link} from "react-router-dom";
 
 class TopBar extends React.Component {
-    state = {re: true};
+    state = {activePage: "/"};
 
     render() {
         const menuItems = [
@@ -14,7 +14,7 @@ class TopBar extends React.Component {
         ];
         return (
             <nav className="navbar navbar-expand-md bg-transparent navbar-dark">
-                <Link className="navbar-brand logo" to="/">
+                <Link className="navbar-brand logo" to="/" onClick={()=>this.onChange("/")}>
                     <img
                         style={{width: "64px"}}
                         className="img-fluid"
@@ -32,11 +32,15 @@ class TopBar extends React.Component {
                 </button>
                 <div className="collapse navbar-collapse" id="collapsibleNavbar">
                     <ul className="navbar-nav">
-                        <Menu items={menuItems}/>
+                        <Menu items={menuItems} onChange={this.onChange}/>
                     </ul>
                 </div>
             </nav>
         );
+    }
+
+    onChange=(url)=>{
+        this.setState({activePage:url});
     }
 }
 
