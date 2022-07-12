@@ -1,8 +1,12 @@
 import React from "react";
 import "../sass/components/Menu.scss";
-import {Link} from "react-router-dom";
+import {Link, useHistory} from "react-router-dom";
+
 class Menu extends React.Component {
-  render() {
+  state = {activePage: "/"};
+
+    render() {
+        console.log(this.props)
     return <>{this.renderItems(this.props.items)}</>;
   }
 
@@ -10,7 +14,11 @@ class Menu extends React.Component {
     return items.map((item) => {
       return (
         <li className="nav-item px-5 py-3">
-          <Link className="nav-link text-white" to={item.url}>
+          <Link
+              className={`nav-link text-white ${window.location.pathname===item.url?"nav-link--active":""}`}
+              to={item.url}
+              onClick={()=>this.setState({activePage:item.url})}
+          >
             {item.name}
           </Link>
         </li>

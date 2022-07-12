@@ -4,6 +4,8 @@ import "../sass/components/TopBar.scss";
 import {Link} from "react-router-dom";
 
 class TopBar extends React.Component {
+    state = {re: true};
+
     render() {
         const menuItems = [
             {name: "صفحه اصلی", url: "/"},
