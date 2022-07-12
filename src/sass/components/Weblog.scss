@@ -47,6 +47,7 @@
 
 	p {
 	  font-size: 14px;
+	  text-align: right!important;
 	}
 
 	h6 {
@@ -85,6 +86,9 @@
   .back{
 	width: 95%!important;
 
+  }
+  .back h6{
+	text-align: center!important;
   }
   .blog__inside{
 	height: 200px;

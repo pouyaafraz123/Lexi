@@ -56,6 +56,12 @@ const Home = () => {
         >
           <DownloadSection />
         </motion.div>
+          <motion.div
+              initial={{ opacity: 0, transitionDuration: "1s" }}
+              whileInView={{ opacity: 1 }}
+          >
+              <Weblog/>
+          </motion.div>
       </div>
     </>
   );
