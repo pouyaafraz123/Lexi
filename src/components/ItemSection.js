@@ -4,7 +4,7 @@ import "../sass/components/ItemSection.scss";
 class ItemSection extends React.Component{
     render() {
         return (
-            <div>
+            <div className={"row d-flex justify-content-center"}>
                 {this.renderItems()}
             </div>
         );
@@ -28,7 +28,9 @@ class ItemSection extends React.Component{
 
         return items.map(item=>{
            return (
+               <div className={"col-lg-4 col-12"}>
                <Item img={item.key} key={item.key} text={item.text}/>
+               </div>
            );
         });
     }

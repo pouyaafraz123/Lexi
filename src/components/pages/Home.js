@@ -11,60 +11,66 @@ import DownloadSection from "../DownloadSection";
 import Weblog from "../Weblog";
 
 const Home = () => {
-  return (
-    <>
-      <div className="container">
-        <motion.div
-          initial={{ opacity: 0, transitionDuration: "1s" }}
-          whileInView={{ opacity: 1 }}
-        >
-          <Header />
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0, transitionDuration: "1s" }}
-          whileInView={{ opacity: 1 }}
-        >
-          <AboutUs />
-        </motion.div>
-      </div>
-      <motion.div
-        initial={{ opacity: 0, transitionDuration: "1s" }}
-        whileInView={{ opacity: 1 }}
-      >
-        <div className="" style={{ backgroundColor: "#353535" }}>
-          <div className="container">
-            <FeatureSection />
-          </div>
-        </div>
-      </motion.div>
-      <div className="container">
-        <motion.div
-          initial={{ opacity: 0, transitionDuration: "1s" }}
-          whileInView={{ opacity: 1 }}
-        >
-          <SuitableSection />
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0, transitionDuration: "1s" }}
-          whileInView={{ opacity: 1 }}
-        >
-          <ItemSection />
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0, transitionDuration: "1s" }}
-          whileInView={{ opacity: 1 }}
-        >
-          <DownloadSection />
-        </motion.div>
-          <motion.div
-              initial={{ opacity: 0, transitionDuration: "1s" }}
-              whileInView={{ opacity: 1 }}
-          >
-              <Weblog/>
-          </motion.div>
-      </div>
-    </>
-  );
+    return (
+        <>
+            <div className="container">
+                <motion.div
+                    initial={{opacity: 0, transitionDuration: "1s"}}
+                    whileInView={{opacity: 1}}
+                >
+                    <Header/>
+                </motion.div>
+                <motion.div
+                    initial={{opacity: 0, transitionDuration: "1s"}}
+                    whileInView={{opacity: 1}}
+                >
+                    <AboutUs/>
+                </motion.div>
+            </div>
+            <motion.div
+                initial={{opacity: 0, transitionDuration: "1s"}}
+                whileInView={{opacity: 1}}
+            >
+                <div className="" style={{backgroundColor: "#353535"}}>
+                    <div className="container">
+                        <FeatureSection/>
+                    </div>
+                </div>
+            </motion.div>
+            <div className="container">
+                <motion.div
+                    initial={{opacity: 0, transitionDuration: "1s"}}
+                    whileInView={{opacity: 1}}
+                >
+                    <SuitableSection/>
+                </motion.div>
+            </div>
+            <motion.div
+                initial={{opacity: 0, transitionDuration: "1s"}}
+                whileInView={{opacity: 1}}
+            >
+                <div className="" style={{backgroundColor: "#353535"}}>
+                    <div className="container">
+                        <ItemSection/>
+                    </div>
+                </div>
+            </motion.div>
+            <div className="container">
+                <motion.div
+                    initial={{opacity: 0, transitionDuration: "1s"}}
+                    whileInView={{opacity: 1}}
+                >
+                    <DownloadSection/>
+                </motion.div>
+                <motion.div
+                    initial={{opacity: 0, transitionDuration: "1s"}}
+                    whileInView={{opacity: 1}}
+                >
+                    <Weblog/>
+                </motion.div>
+            </div>
+        </>
+    );
 };
 
 export default Home;
