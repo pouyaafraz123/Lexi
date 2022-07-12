@@ -1,42 +1,50 @@
 @import "../mixin";
 
 .AboutUs-Section h1 {
-    margin-top: 230px;
+  margin-top: 230px;
 }
 
 .AboutUs-Section-Media button {
-    z-index: 1000;
-    transform: translate(50px, -70px);
+  z-index: 1000;
+  transform: translate(50px, -70px);
 }
 
 .AboutUs-Section-Media button::before {
-    content: "";
-    width: 130px;
-    height: 130px;
-    border-left: 19px solid #252729;
-    display: block;
-    position: relative;
-    border-radius: 5000px;
-    transform: translate(21px, -13px) rotate(244deg);
+  content: "";
+  width: 130px;
+  height: 130px;
+  border-left: 19px solid #252729;
+  display: block;
+  position: relative;
+  border-radius: 5000px;
+  transform: translate(21px, -13px) rotate(244deg);
+}
+
+@media only screen and (max-width: 1200px) {
+  .AboutUs-Section p {
+    text-align: right;
+    padding-left: 35px;
+  }
 }
 
 @media only screen and (max-width: 992px) {
-    .AboutUs-Section h1 {
-        margin-top: 130px;
-        text-align: center;
-    }
+  .AboutUs-Section h1 {
+    margin-top: 130px !important;
+    text-align: center !important;
+  }
 
-    .AboutUs-Section h3,
-    p {
-        text-align: center;
-    }
+  .AboutUs-Section h3,
+  p {
+    text-align: center !important;
+    padding-left: unset !important;
+  }
 
-    .AboutUs-Section-Media {
-        text-align: center !important;
-    }
+  .AboutUs-Section-Media {
+    text-align: center !important;
+  }
 
-    .AboutUs-Section-Media button {
-        transform: unset !important;
-        transform: translate(0, -50%) !important;
-    }
+  .AboutUs-Section-Media button {
+    transform: unset !important;
+    transform: translate(0, -50%) !important;
+  }
 }
