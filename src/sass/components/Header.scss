@@ -1,0 +1,26 @@
+.Header-Section button {
+    width: 272px;
+    height: 48px;
+    left: 436px;
+    top: 584px;
+    background: #7661a4;
+    border-radius: 12px;
+    outline: none;
+    color: white;
+    border: 0;
+}
+
+@media only screen and (max-width: 992px) {
+    .Header-Section-image {
+        text-align: center !important;
+    }
+
+    .Header-Section-text {
+        margin-right: 0px !important;
+        text-align: center;
+    }
+
+    .Header-Section-text-info {
+        justify-content: center !important;
+    }
+}

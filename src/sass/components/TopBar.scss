@@ -1,0 +1,14 @@
+@media only screen and (max-width: 992px) {
+  .navbar-nav {
+    text-align: center;
+  }
+}
+
+.nav-link {
+  transition: all ease-in-out 0.7s;
+  border-radius: 10px;
+}
+
+.nav-link:hover {
+  background-image: linear-gradient(to bottom right, #b751fd, #6244d3);
+}
