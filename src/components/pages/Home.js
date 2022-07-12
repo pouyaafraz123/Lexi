@@ -8,6 +8,7 @@ import "../../sass/pages/Home.scss";
 import SuitableSection from "../SuitableSection";
 import ItemSection from "../ItemSection";
 import DownloadSection from "../DownloadSection";
+import Weblog from "../Weblog";
 
 const Home = () => {
     return (
@@ -49,6 +50,13 @@ const Home = () => {
                 whileInView={{opacity: 1}}>
                 <DownloadSection/>
             </motion.div>
+            <div className="container">
+                <motion.div
+                    initial={{opacity: 0, transitionDuration: "1s"}}
+                    whileInView={{opacity: 1}}>
+                    <Weblog/>
+                </motion.div>
+            </div>
 
         </>
     );

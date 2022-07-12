@@ -1,0 +1,94 @@
+
+.blog {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 20px;
+
+  .back {
+	width: 371px;
+	height: 407px;
+	border-radius: 20px;
+	overflow: hidden;
+	margin: auto;
+	margin-bottom: 25px!important;
+  }
+
+  &__inside {
+	display: flex;
+	padding: 25px;
+	justify-content: space-between !important;
+	flex-direction: column;
+	overflow: hidden;
+	background-color: rgba(white, .1);
+	backdrop-filter: blur(20px);
+	border-radius: 20px;
+	z-index: 2;
+	transition: all .2s ease-in;
+	height: 200px;
+	width: 371px;
+	cursor: pointer;
+	.blog-button {
+	  display: none;
+	  background-color: transparent;
+	  color: #7661A4;
+	  text-decoration: none;
+	  margin-bottom: 15px;
+	  border: 0;
+	  text-align: left;
+	  padding: 15px;
+	  font-size: 18px;
+	}
+
+	.blog-date {
+		font-size: 14px;
+	  	color: #bbb;
+	}
+
+	p {
+	  font-size: 14px;
+	}
+
+	h6 {
+	  font-size: 20px;
+	  font-weight: bolder;
+	}
+
+	transform: translateY(207px);
+
+	&:hover {
+	  transform: translateY(0);
+	  border-radius: 20px;
+	  height: 407px;
+
+	  .blog-button {
+		display: inline;
+	  }
+	}
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 992px) {
+  .back{
+	height: 200px;
+	width: 306px!important;
+
+  }
+  .blog__inside{
+	  height: 200px;
+	  width: 306px!important;
+
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .back{
+	width: 95%!important;
+
+  }
+  .blog__inside{
+	height: 200px;
+	width: 100%;
+
+  }
+}
