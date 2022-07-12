@@ -16,9 +16,6 @@
 
 }
 
-.logo{
-  transition: all .4s ease-in-out;
-  &:hover{
-    transform: scale(1.2);
-  }
+.nav-link:active{
+  background-image: linear-gradient(to bottom right, #b751fd, #6244d3);
 }
