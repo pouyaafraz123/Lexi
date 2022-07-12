@@ -24,7 +24,7 @@ class AboutUs extends React.Component {
         <div className="row">
           <div className="col-lg-6 col-12 mb-2 text-white">
             <h3 className="mb-4">با لکسی آسان یاد بگیر</h3>
-            <p className="pl-3">
+            <p className="">
               اپلیکیشن لکسی، اولین پلنفرم هوشمند آموزش زبان انگلیسی میباشد که با
               بهره گیری از مناسب ترین متد آموزشی، شما میتوانید آموزش زبان را با
               آن شروع کنید. محتوای آموزشی این اپ، کاملا اصلی و به اصلاح ارجینال
