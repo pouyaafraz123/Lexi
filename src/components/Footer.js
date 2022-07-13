@@ -60,7 +60,7 @@ class Footer extends React.Component {
     ];
 
     return links.map((link) => {
-      return <Link to={link.url} onClick={() => this.props.onChange(link.url)}>{link.name}</Link>;
+      return <Link to={link.url} className={`${window.location.pathname === link.url ? "link__active" : ""}`} onClick={() => this.props.onChange(link.url)}>{link.name}</Link>;
     });
   }
 }
