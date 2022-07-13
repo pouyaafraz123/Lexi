@@ -10,6 +10,7 @@ class TopBar extends React.Component {
         const menuItems = [
             {name: "صفحه اصلی", url: "/"},
             {name: "همکاری با ما", url: "/collaborate"},
+            {name: "تماس با ما",url:"/contact-us"},
             {name: "درباره ما", url: "/about-us"}
         ];
         return (
