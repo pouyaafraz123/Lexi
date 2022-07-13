@@ -32,12 +32,14 @@ const App = () => {
             <Route path={"/contact-us"} exact component={ContactUsPage} />
             <Route path={"/rules"} exact component={RulesPage} />
           </Switch>
-          <motion.div
-            initial={{ opacity: 0, transitionDuration: "1s" }}
-            whileInView={{ opacity: 1 }}
-          >
-            <Footer />
-          </motion.div>
+          <div className="container" style={{backgroundColor: "#353535", borderRadius: '12px'}}>
+            <motion.div
+              initial={{ opacity: 0, transitionDuration: "1s" }}
+              whileInView={{ opacity: 1 }}
+            >
+              <Footer />
+            </motion.div>
+          </div>
         </div>
       </BrowserRouter>
     </>

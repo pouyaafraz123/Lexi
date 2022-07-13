@@ -1,0 +1,72 @@
+.Footer-Section {
+  padding-top: 58px;
+  padding-right: 72px;
+  padding-bottom: 150px;
+}
+
+.Footer-Section a {
+  color: #fff;
+  margin-bottom: 35px;
+  text-decoration: none;
+  transition: all ease 0.5s;
+}
+
+.Footer-Section a:hover {
+  color: #7661a4;
+}
+
+.Footer-Section a::after {
+  content: "";
+  position: relative;
+  display: block;
+  width: 0px;
+  padding-top: 5px;
+  border-bottom: 2px solid #7661a4;
+  transition: all ease 0.5s;
+}
+
+.Footer-Section a:hover:after {
+  content: "";
+  width: 25px;
+  border-bottom: 2px solid #7661a4;
+  transition: all ease 0.5s;
+}
+
+@media only screen and (max-width: 992px) {
+  .Footer-Section {
+    padding-right: 0px !important;
+  }
+  .Footer-Section-1 {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: column !important;
+  }
+
+  .Footer-Section-2 {
+    margin-top: 50px;
+    text-align: center;
+    margin-right: 0px !important;
+    margin-bottom: 50px;
+  }
+
+  .Footer-Section-2 h3 {
+    margin-bottom: 50px !important;
+  }
+
+  .Footer-Section a {
+    width: fit-content;
+    margin: 0px auto;
+    margin-bottom: 0px;
+    margin-bottom: 35px;
+  }
+
+  .Footer-Section-3 {
+    text-align: center;
+    margin-right: 0px !important;
+  }
+
+  .Footer-Section-3 h3 {
+    margin-bottom: 50px !important;
+  }
+}
