@@ -1,32 +1,44 @@
 .Download-Section-Image img {
-    transform: scale(1.3) translate(-90px, 5px);
+  transform: scale(1.3) translate(-90px, 5px);
 }
 
 .Download-Section {
-    margin-top: 150px;
+  margin-top: 150px;
 }
 
 .Download-Section-Text-Image img {
-    width: 170px;
-    cursor: pointer;
+  width: 170px;
+  cursor: pointer;
 }
 
 .Download-Section-Text p {
-    line-height: 2;
+  line-height: 2;
 }
 
 @media only screen and (max-width: 1200px) {
-    .Download-Section-Image img {
-        transform: scale(1.3) translate(-40px, 10px);
-    }
+  .Download-Section-Image img {
+    transform: scale(1.3) translate(-40px, 10px);
+  }
 }
 
 @media only screen and (max-width: 992px) {
-    .Download-Section-Image img {
-        transform: unset;
+  .Download-Section-Image img {
+    transform: unset;
+  }
+
+  .Download-Section-Text-Image img {
+    width: 190px;
+  }
+
+  .Download-Section-Text {
+    h3,
+    h4,
+    p {
+        text-align: center;
     }
 
-    .Download-Section-Text-Image img{
-        width: 190px;
+    h3 {
+        margin-top: 20px;
     }
+  }
 }
