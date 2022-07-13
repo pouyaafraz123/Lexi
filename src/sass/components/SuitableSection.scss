@@ -1,0 +1,33 @@
+.Suitable-Section {
+    margin-top: 250px;
+    margin-bottom: 125px;
+}
+
+.Suitable-Section-Image img {
+    transform: scale(1.2) translate(180px, -28px);
+}
+
+.Suitable-Section-Text p {
+    line-height: 2;
+}
+
+@media only screen and (max-width: 1200px) {
+    .Suitable-Section-Image img {
+        transform: translate(175px, -40px);
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .Suitable-Section {
+        margin-top: 130px;
+    }
+
+    .Suitable-Section-Text h3,
+    h5 {
+        text-align: center;
+    }
+
+    .Suitable-Section-Image img {
+        transform: unset;
+    }
+}
