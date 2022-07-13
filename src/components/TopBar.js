@@ -4,8 +4,6 @@ import "../sass/components/TopBar.scss";
 import {Link} from "react-router-dom";
 
 class TopBar extends React.Component {
-    state = {activePage: "/"};
-
     render() {
         const menuItems = [
             {name: "صفحه اصلی", url: "/"},
@@ -15,7 +13,7 @@ class TopBar extends React.Component {
         ];
         return (
             <nav className="navbar navbar-expand-md bg-transparent navbar-dark">
-                <Link className="navbar-brand logo" to="/" onClick={()=>this.onChange("/")}>
+                <Link className="navbar-brand logo" to="/" onClick={()=>this.props.onChange("/")}>
                     <img
                         style={{width: "64px"}}
                         className="img-fluid"
@@ -33,16 +31,14 @@ class TopBar extends React.Component {
                 </button>
                 <div className="collapse navbar-collapse" id="collapsibleNavbar">
                     <ul className="navbar-nav">
-                        <Menu items={menuItems} onChange={this.onChange}/>
+                        <Menu items={menuItems} onChange={this.props.onChange}/>
                     </ul>
                 </div>
             </nav>
         );
     }
 
-    onChange=(url)=>{
-        this.setState({activePage:url});
-    }
+
 }
 
 export default TopBar;

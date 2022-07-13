@@ -11,10 +11,20 @@
 	border-radius: 20px;
 	overflow: hidden;
 	margin: auto;
-	margin-bottom: 25px!important;
+	margin-bottom: 25px !important;
+
+
   }
 
+  .back:hover .blog__inside {
+	transform: translateY(0);
+	border-radius: 20px;
+	height: 407px;
 
+	.blog-button {
+	  display: inline;
+	}
+  }
 
   &__inside {
 	display: flex;
@@ -31,6 +41,7 @@
 	height: 200px;
 	width: 371px;
 	cursor: pointer;
+
 	.blog-button {
 	  display: none;
 	  background-color: transparent;
@@ -44,15 +55,14 @@
 	}
 
 
-
 	.blog-date {
-		font-size: 14px;
-	  	color: #bbb;
+	  font-size: 14px;
+	  color: #bbb;
 	}
 
 	p {
 	  font-size: 14px;
-	  text-align: right!important;
+	  text-align: right !important;
 	}
 
 	h6 {
@@ -62,40 +72,32 @@
 
 	transform: translateY(207px);
 
-	&:hover {
-	  transform: translateY(0);
-	  border-radius: 20px;
-	  height: 407px;
 
-	  .blog-button {
-		display: inline;
-	  }
-	}
   }
 }
 
 @media screen and (max-width: 1200px) and (min-width: 992px) {
-  .back{
+  .back {
 	height: 200px;
-	width: 306px!important;
+	width: 306px !important;
 
   }
-  .blog__inside{
-	  height: 200px;
-	  width: 306px!important;
+  .blog__inside {
+	height: 200px;
+	width: 306px !important;
 
   }
 }
 
 @media screen and (max-width: 400px) {
-  .back{
-	width: 95%!important;
+  .back {
+	width: 95% !important;
 
   }
-  .back h6{
-	text-align: center!important;
+  .back h6 {
+	text-align: center !important;
   }
-  .blog__inside{
+  .blog__inside {
 	height: 200px;
 	width: 100%;
 
@@ -103,7 +105,7 @@
 }
 
 .Weblog-Section {
-	margin-top: 150px;
+  margin-top: 150px;
 }
 
 // .WebLog-Section-Image {
@@ -133,5 +135,5 @@
 
 
 // .WebLog-Section-Text {
-	
+
 // }
