@@ -15,7 +15,7 @@ const App = () => {
 
     const onChange = (url) => {
         setActivePage(url);
-        console.log(1)
+        window.scrollTo(0,0);
     }
     return (
         <>
