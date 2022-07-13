@@ -15,18 +15,12 @@ const App = () => {
 
     const onChange = (url) => {
         setActivePage(url);
-        window.scrollTo(0,0);
+        window.scrollTo(0, 0);
     }
     return (
         <>
             <BrowserRouter>
                 <div className={"app"}>
-                    {/*<div className={"app__inside"}>
-                        <div className={"circle circle1"}></div>
-                        <div className={"circle circle2"}></div>
-                        <div className={"circle circle3"}></div>
-                    </div>*/}
-
                     <div className="container">
                         <div className="pt-5">
                             <motion.div
