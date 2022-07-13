@@ -1,0 +1,32 @@
+.ContactUs-Section-Text {
+  background: rgba(196, 196, 196, 0.08) !important;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.16),
+    inset 0px -10px 4px rgba(86, 86, 86, 0.12) !important;
+  border-radius: 12px !important;
+  border-top: 0.5px solid #fff !important;
+  border-right: 0.5px solid #fff !important;
+}
+
+.ContactUs-Section-Text img {
+  width: 30px;
+  height: 20px;
+}
+
+.custom-border {
+  border-bottom: 1px solid #292a2d;
+}
+
+.ContactUs-Section {
+  margin-top: 200px;
+  margin-bottom: 215px;
+}
+
+.ContactUs-Section-Image img {
+    transform: scale(1.3) translate(-25px,-175px);
+}
+
+@media only screen and (max-width: 992px){
+    .ContactUs-Section-Image img {
+        transform: unset;
+    }
+}
