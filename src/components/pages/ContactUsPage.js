@@ -3,7 +3,11 @@ import "../../sass/pages/ContactUsPage.scss";
 import ContactUs from "../ContactUs";
 
 const ContactUsPage = () => {
-    return <ContactUs/>;
-}
+  return (
+    <div className="container">
+      <ContactUs />
+    </div>
+  );
+};
 
 export default ContactUsPage;
